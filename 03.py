@@ -7,11 +7,11 @@ import random
 a1 = random.randrange(1,7)
 print(a1)
 
-#length of string
+# length of string
 b = "Hello"
 print(len(b))
 
-#String Slice
+# String Slice
 b1 = "Hello World"
 c = b1[0:5]
 print(c)
@@ -26,11 +26,7 @@ a2  = "  Hello "
 a3 = a2.strip()
 print(a3)
 
-
-
-
-
-"""#01. convert hello into upper case
+#01. convert hello into upper case
 x = "hello"
 y = x.upper()
 print(y)
@@ -110,4 +106,4 @@ print(list(y7))
 #13. Course = "DataScience" print characters from index 4 to 9 using slicing
 Course = "DataScience"
 y8 = Course[4:10]
-print(y8)"""
+print(y8)
