@@ -1,4 +1,4 @@
-#01. covert hello into upper case
+#01. convert hello into upper case
 x = "hello"
 y = x.upper()
 print(y)
