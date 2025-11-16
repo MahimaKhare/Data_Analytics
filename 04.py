@@ -8,9 +8,9 @@ x1 = f"My name is {fname}"
 print(x1)
 
 #Q.01 
-x = input("enter your name")
-y = int(input("enter your age"))
-x2 = f"My Name is {x} and My age is {y}"
+y = input("enter your name")
+y1 = int(input("enter your age"))
+x2 = f"My Name is {y} and My age is {y1}"
 print(x2)
 
 # Escape Character 
@@ -52,19 +52,19 @@ print(a1 >= b1)
 print(a1 != b1)
 
 # Assignment Operator
-a1 = 10
-a1 += 5
-print(a1)
-a1 -= 4
-print(a1)
-a1 *= 3
-print(a1)
-a1 /= 2
-print(a1)
-a1 %= 7
-print(a1)
-a1 **= 4
-print(a1)
+a2 = 10
+a2 += 5
+print(a2)
+a2 -= 4
+print(a2)
+a2 *= 3
+print(a2)
+a2 /= 2
+print(a2)
+a2 %= 7
+print(a2)
+a2 **= 4
+print(a2)
 
 #Logical Operator
 i = 20
