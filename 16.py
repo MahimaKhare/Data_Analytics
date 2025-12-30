@@ -20,9 +20,9 @@ x = [1,2,3,4,5,6]
 print(x.copy())
 
 #View
-"""y = data.view()
+y = data.view()
 y[0] = 10
-print(y)"""
+print(y)
 
 
 #Airthematic Operators
@@ -134,7 +134,7 @@ print(np.median(arr))
 print(np.var(arr))
 
 #std
-print(np.var(arr))
+print(np.std(arr))
 
 
 #Q.2 square of an array than subtract by 10 than calculate mean,median,min,max

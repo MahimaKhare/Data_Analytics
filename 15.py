@@ -37,10 +37,10 @@ print(np.eye(3))
 print(np.arange(2,12,2))
 
 #Linspace
-np.linspace(2,12,5)
+print(np.linspace(0,1,5))
 
 #Random number matrix
-print(np.random.rand(1,50))
+print(np.random.randint(1,50,(3,3)))
 
 #
 arr = np.array([[1,2,3],[4,5,6]])
@@ -77,7 +77,7 @@ print(arr == 25)
 
 #Q.1. Create an array of number 1 to 20 using np.arange()
 
-a = np.arange(1,20,1)
+a = np.arange(1,21,)
 print(a)
 
 #shape of array
@@ -90,7 +90,7 @@ print(a.size)
 print(a.dtype)
 
 #Q.2. 3X3 random number 10 to 50 maximum minimum mean
-b = np.random.randint(1,50,(3,3))
+b = np.random.randint(1,51,(3,3))
 print(b)
 
 #maximum number
