@@ -72,11 +72,11 @@ plt.show()
 plt.plot(x,y, marker = 'P')
 plt.show()
 
-#Triangle Down
+#Triangle up
 plt.plot(x,y, marker = '^')
 plt.show()
 
-#Triangle Up
+#Triangle down
 plt.plot(x,y, marker = 'v')
 plt.show()
 
@@ -137,7 +137,7 @@ plt.plot(x,y, marker = '*', ms = 20, mec = 'r', mfc = 'b')
 plt.show()
 
 #line widht
-plt.plot(x,y, '.--b', lw = '20')
+plt.plot(x,y, '.--b', lw = 20)
 plt.show()
 
 # line style 
