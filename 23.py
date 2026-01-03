@@ -137,19 +137,17 @@ plt.plot(x,y, marker = '*', ms = 20, mec = 'r', mfc = 'b')
 plt.show()
 
 #line widht
-plt.plot(x,y, '.--b', lw = 20)
+plt.plot(x,y, '.--b', lw = 2)
 plt.show()
 
 # line style 
-plt.plot(x,y, '.--b', ls = 'solid')
+
+plt.plot(x,y,ls = '--')
 plt.show()
 
-plt.plot(x,y, '.--b', ls = '-')
-plt.show()
-
-plt.plot(x,y, '.--b', ls = '-.')
+plt.plot(x,y, ls = '-.')
 plt.show()
 
 #Line color 
-plt.plot(x,y, '.--b', ls = '-', color = 'r')
+plt.plot(x,y, ls = '--', color = 'r')
 plt.show()
