@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np 
 
-"""x = np.array([1,2,3,4,5,6])
+x = np.array([1,2,3,4,5,6])
 y = np.array([7,8,9,10,11,12])
 
 #Lable
@@ -27,7 +27,7 @@ plt.show()
 #Grid
 plt.plot(x,y,'o')
 plt.grid(color='green',linestyle = '--',linewidth = 0.5)
-plt.show()"""
+plt.show()
 
 #subplot
 x = [0,1,2,3]
@@ -81,6 +81,13 @@ y = [10,20,30,40,50,60]
 plt.subplot(3,3,2)
 plt.plot(x,y)
 plt.title("Chart-2")
+
+x =[0,1,2,4,6,8]
+y = [10,20,30,40,60,80]
+
+plt.subplot(3,3,3)
+plt.plot(x,y)
+plt.title("Chart-3")
 
 plt.suptitle("Subplots")
 
