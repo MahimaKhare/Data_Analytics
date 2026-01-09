@@ -1,5 +1,4 @@
-import pandas as pd
-import numpy as np
+#Lineplot in Seaborn
 import matplotlib.pyplot as plt
 import seaborn as sns
 
