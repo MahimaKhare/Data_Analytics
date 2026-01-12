@@ -1,11 +1,11 @@
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-#data = sns.load_dataset('anscombe')
-#print(data)
+data = sns.load_dataset('anscombe')
+print(data)
 
 #histogram
-"""sns.displot(data['x'])
+sns.displot(data['x'])
 plt.show()
 
 #bins
@@ -29,10 +29,12 @@ plt.show()
 
 #log_scale
 sns.displot(data['x'],kde = True, rug= True, log_scale= True)
-plt.show()"""
+plt.show()
+
+
 
 #barplot
-"""data = sns.load_dataset('attention')
+data = sns.load_dataset('attention')
 print(data.head(5))
 
 sns.barplot(x='subject',y='score',data = data)
@@ -68,7 +70,9 @@ plt.show()
 
 #dodge
 sns.barplot(x='subject',y='score',data = data, hue = 'attention', orient= 'h', color= 'g', saturation= 0.5, errcolor= 'r', capsize= 5, dodge= False)
-plt.show()"""
+plt.show()
+
+
 
 #Scatter plot
 data = sns.load_dataset('car_crashes')
