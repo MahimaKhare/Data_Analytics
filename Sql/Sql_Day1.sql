@@ -1,0 +1,69 @@
+Create database Details;
+use Details;
+
+Create table School(
+    member_id INT PRIMARY KEY,
+    name VARCHAR(50),
+    role VARCHAR(10),          -- Student / Teacher
+    gender VARCHAR(10),
+    age INT,
+    department VARCHAR(50),
+    subject_or_class VARCHAR(50),
+    phone VARCHAR(15),
+    email VARCHAR(50)
+);
+
+insert into School Values 
+(1,'Aman Sharma','Student','Male',20,'Computer','BCA','9876543210','aman@gmail.com'),
+(2,'Riya Verma','Student','Female',19,'Computer','BCA','9876543211','riya@gmail.com'),
+(3,'Rahul Singh','Student','Male',21,'IT','BSc IT','9876543212','rahul@gmail.com'),
+(4,'Neha Gupta','Student','Female',20,'IT','BSc IT','9876543213','neha@gmail.com'),
+(5,'Karan Mehta','Student','Male',22,'Management','BBA','9876543214','karan@gmail.com'),
+(6,'Pooja Jain','Student','Female',21,'Management','BBA','9876543215','pooja@gmail.com'),
+(7,'Ankit Yadav','Student','Male',19,'Computer','BCA','9876543216','ankit@gmail.com'),
+(8,'Sneha Patel','Student','Female',20,'Computer','BCA','9876543217','sneha@gmail.com'),
+(9,'Rohit Kumar','Student','Male',21,'IT','BSc IT','9876543218','rohit@gmail.com'),
+(10,'Priya Mishra','Student','Female',22,'IT','BSc IT','9876543219','priya@gmail.com'),
+(11,'Arjun Malhotra','Student','Male',20,'Computer','BCA','9876543220','arjun@gmail.com'),
+(12,'Kavita Singh','Student','Female',19,'Computer','BCA','9876543221','kavita@gmail.com'),
+(13,'Saurabh Joshi','Student','Male',21,'Management','BBA','9876543222','saurabh@gmail.com'),
+(14,'Nidhi Saxena','Student','Female',20,'Management','BBA','9876543223','nidhi@gmail.com'),
+(15,'Vikas Tiwari','Student','Male',22,'IT','BSc IT','9876543224','vikas@gmail.com'),
+(16,'Simran Kaur','Student','Female',21,'IT','BSc IT','9876543225','simran@gmail.com'),
+(17,'Mohit Aggarwal','Student','Male',20,'Computer','BCA','9876543226','mohit@gmail.com'),
+(18,'Anjali Roy','Student','Female',19,'Computer','BCA','9876543227','anjali@gmail.com'),
+(19,'Deepak Choudhary','Student','Male',21,'Management','BBA','9876543228','deepak@gmail.com'),
+(20,'Isha Kapoor','Student','Female',22,'Management','BBA','9876543229','isha@gmail.com'),
+(21,'Naveen Rana','Student','Male',20,'IT','BSc IT','9876543230','naveen@gmail.com'),
+(22,'Meena Sharma','Student','Female',21,'IT','BSc IT','9876543231','meena@gmail.com'),
+(23,'Ajay Verma','Student','Male',19,'Computer','BCA','9876543232','ajay@gmail.com'),
+(24,'Payal Gupta','Student','Female',20,'Computer','BCA','9876543233','payal@gmail.com'),
+(25,'Harsh Pandey','Student','Male',22,'Management','BBA','9876543234','harsh@gmail.com'),
+
+(26,'Dr. Rakesh Sharma','Teacher','Male',45,'Computer','DBMS','9876543235','rakesh@gmail.com'),
+(27,'Ms. Sunita Verma','Teacher','Female',42,'Computer','SQL','9876543236','sunita@gmail.com'),
+(28,'Mr. Anil Singh','Teacher','Male',48,'IT','Networking','9876543237','anil@gmail.com'),
+(29,'Ms. Kavya Jain','Teacher','Female',40,'IT','Python','9876543238','kavya@gmail.com'),
+(30,'Mr. Suresh Mehta','Teacher','Male',50,'Management','Finance','9876543239','suresh@gmail.com'),
+(31,'Ms. Neelam Gupta','Teacher','Female',44,'Management','HR','9876543240','neelam@gmail.com'),
+(32,'Mr. Vinod Kumar','Teacher','Male',46,'Computer','Java','9876543241','vinod@gmail.com'),
+(33,'Ms. Ritu Patel','Teacher','Female',39,'Computer','Web Dev','9876543242','ritu@gmail.com'),
+(34,'Mr. Alok Mishra','Teacher','Male',52,'IT','Data Science','9876543243','alok@gmail.com'),
+(35,'Ms. Pankhuri Roy','Teacher','Female',41,'IT','AI','9876543244','pankhuri@gmail.com'),
+(36,'Mr. Deepesh Saxena','Teacher','Male',47,'Management','Marketing','9876543245','deepesh@gmail.com'),
+(37,'Ms. Shalini Kapoor','Teacher','Female',43,'Management','Economics','9876543246','shalini@gmail.com'),
+(38,'Mr. Nitin Tiwari','Teacher','Male',49,'Computer','OS','9876543247','nitin@gmail.com'),
+(39,'Ms. Aarti Kaur','Teacher','Female',38,'Computer','C++','9876543248','aarti@gmail.com'),
+(40,'Mr. Rajeev Rana','Teacher','Male',51,'IT','Cloud','9876543249','rajeev@gmail.com'),
+(41,'Ms. Swati Aggarwal','Teacher','Female',40,'IT','ML','9876543250','swati@gmail.com'),
+(42,'Mr. Manoj Choudhary','Teacher','Male',48,'Management','Operations','9876543251','manoj@gmail.com'),
+(43,'Ms. Bhavna Joshi','Teacher','Female',42,'Management','Business Law','9876543252','bhavna@gmail.com'),
+(44,'Mr. Ashish Malhotra','Teacher','Male',45,'Computer','DSA','9876543253','ashish@gmail.com'),
+(45,'Ms. Preeti Saxena','Teacher','Female',39,'Computer','HTML','9876543254','preeti@gmail.com'),
+(46,'Mr. Sanjay Pandey','Teacher','Male',53,'IT','Cyber Security','9876543255','sanjay@gmail.com'),
+(47,'Ms. Monika Sharma','Teacher','Female',41,'IT','Big Data','9876543256','monika@gmail.com'),
+(48,'Mr. Pradeep Verma','Teacher','Male',50,'Management','Accounting','9876543257','pradeep@gmail.com'),
+(49,'Ms. Nisha Singh','Teacher','Female',44,'Management','Entrepreneurship','9876543258','nisha@gmail.com'),
+(50,'Mr. Akhilesh Yadav','Teacher','Male',55,'Computer','Software Engg','9876543259','akhilesh@gmail.com'); 
+
+select * from School;
