@@ -4,7 +4,7 @@ use Details;
 Create table School(
     member_id INT PRIMARY KEY,
     name VARCHAR(50),
-    role VARCHAR(10),          -- Student / Teacher
+    role VARCHAR(10),         
     gender VARCHAR(10),
     age INT,
     department VARCHAR(50),
