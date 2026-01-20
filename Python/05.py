@@ -167,20 +167,25 @@ match num2:
 
 
 #04 
-number = int(input("enter a number between 1 to 50"))
+number = int(input("Enter a number between 1 to 50: "))
+
 match number:
-    case("num == 25"):
-       
-    case("num>=0 and num<=24"):
-        
-    case("num>=21 and num<=24"):
-        print("lesser but near to win")    
-    case("num >=26 and num<=30"):
-        print("near to win but greater")
-    case("num>=31 and num<=50"):
+    case 25:
+        print("Exact match, you win!")
+
+    case n if 0 <= n <= 20:
+        print("Lesser")
+
+    case n if 21 <= n <= 24:
+        print("Lesser but near to win")
+
+    case n if 26 <= n <= 30:
+        print("Near to win but greater")
+
+    case n if 31 <= n <= 50:
         print("Greater")
+
     case _:
-        print("enter a valid number")    
-  
-    
+        print("Enter a valid number")
+
     
