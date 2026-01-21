@@ -1,69 +1,107 @@
-Create database Details;
-use Details;
+Create database School;
+use School;
 
-Create table School(
-    member_id INT PRIMARY KEY,
-    name VARCHAR(50),
-    role VARCHAR(10),         
-    gender VARCHAR(10),
-    age INT,
-    department VARCHAR(50),
-    subject_or_class VARCHAR(50),
-    phone VARCHAR(15),
-    email VARCHAR(50)
-);
+--Teachers Table
+create table Teachers(
+    TeacherID INT PRIMARY KEY,
+    Name VARCHAR(50),
+    Subject VARCHAR(40),
+    Gender VARCHAR(10),
+    Experience INT,       
+    Salary INT,
+    City VARCHAR(30)
+)
 
-insert into School Values 
-(1,'Aman Sharma','Student','Male',20,'Computer','BCA','9876543210','aman@gmail.com'),
-(2,'Riya Verma','Student','Female',19,'Computer','BCA','9876543211','riya@gmail.com'),
-(3,'Rahul Singh','Student','Male',21,'IT','BSc IT','9876543212','rahul@gmail.com'),
-(4,'Neha Gupta','Student','Female',20,'IT','BSc IT','9876543213','neha@gmail.com'),
-(5,'Karan Mehta','Student','Male',22,'Management','BBA','9876543214','karan@gmail.com'),
-(6,'Pooja Jain','Student','Female',21,'Management','BBA','9876543215','pooja@gmail.com'),
-(7,'Ankit Yadav','Student','Male',19,'Computer','BCA','9876543216','ankit@gmail.com'),
-(8,'Sneha Patel','Student','Female',20,'Computer','BCA','9876543217','sneha@gmail.com'),
-(9,'Rohit Kumar','Student','Male',21,'IT','BSc IT','9876543218','rohit@gmail.com'),
-(10,'Priya Mishra','Student','Female',22,'IT','BSc IT','9876543219','priya@gmail.com'),
-(11,'Arjun Malhotra','Student','Male',20,'Computer','BCA','9876543220','arjun@gmail.com'),
-(12,'Kavita Singh','Student','Female',19,'Computer','BCA','9876543221','kavita@gmail.com'),
-(13,'Saurabh Joshi','Student','Male',21,'Management','BBA','9876543222','saurabh@gmail.com'),
-(14,'Nidhi Saxena','Student','Female',20,'Management','BBA','9876543223','nidhi@gmail.com'),
-(15,'Vikas Tiwari','Student','Male',22,'IT','BSc IT','9876543224','vikas@gmail.com'),
-(16,'Simran Kaur','Student','Female',21,'IT','BSc IT','9876543225','simran@gmail.com'),
-(17,'Mohit Aggarwal','Student','Male',20,'Computer','BCA','9876543226','mohit@gmail.com'),
-(18,'Anjali Roy','Student','Female',19,'Computer','BCA','9876543227','anjali@gmail.com'),
-(19,'Deepak Choudhary','Student','Male',21,'Management','BBA','9876543228','deepak@gmail.com'),
-(20,'Isha Kapoor','Student','Female',22,'Management','BBA','9876543229','isha@gmail.com'),
-(21,'Naveen Rana','Student','Male',20,'IT','BSc IT','9876543230','naveen@gmail.com'),
-(22,'Meena Sharma','Student','Female',21,'IT','BSc IT','9876543231','meena@gmail.com'),
-(23,'Ajay Verma','Student','Male',19,'Computer','BCA','9876543232','ajay@gmail.com'),
-(24,'Payal Gupta','Student','Female',20,'Computer','BCA','9876543233','payal@gmail.com'),
-(25,'Harsh Pandey','Student','Male',22,'Management','BBA','9876543234','harsh@gmail.com'),
+insert into Teachers Values
+(1, 'Anita Sharma', 'Mathematics', 'Female', 8, 45000, 'Delhi'),
+(2, 'Rohit Verma', 'Physics', 'Male', 10, 52000, 'Mumbai'),
+(3, 'Neha Gupta', 'Chemistry', 'Female', 6, 42000, 'Jaipur'),
+(4, 'Amit Singh', 'Biology', 'Male', 12, 60000, 'Lucknow'),
+(5, 'Pooja Mehta', 'English', 'Female', 7, 48000, 'Ahmedabad'),
+(6, 'Suresh Kumar', 'History', 'Male', 15, 65000, 'Patna'),
+(7, 'Kavita Joshi', 'Geography', 'Female', 5, 40000, 'Bhopal'),
+(8, 'Vikas Malhotra', 'Computer Science', 'Male', 9, 55000, 'Chandigarh'),
+(9, 'Sunita Rani', 'Hindi', 'Female', 11, 50000, 'Rohtak'),
+(10, 'Rahul Jain', 'Economics', 'Male', 4, 38000, 'Indore'),
+(11, 'Meena Kapoor', 'Political Science', 'Female', 13, 62000, 'Delhi'),
+(12, 'Arun Mishra', 'Philosophy', 'Male', 14, 64000, 'Varanasi'),
+(13, 'Ritika Arora', 'Psychology', 'Female', 6, 46000, 'Noida'),
+(14, 'Deepak Yadav', 'Physical Education', 'Male', 8, 43000, 'Gurgaon'),
+(15, 'Nidhi Saxena', 'Sociology', 'Female', 9, 47000, 'Agra'),
+(16, 'Manoj Tiwari', 'Statistics', 'Male', 16, 70000, 'Prayagraj'),
+(17, 'Isha Khanna', 'Computer Science', 'Female', 5, 49000, 'Pune'),
+(18, 'Rajesh Patel', 'Accountancy', 'Male', 18, 75000, 'Surat'),
+(19, 'Sneha Kulkarni', 'Business Studies', 'Female', 7, 51000, 'Nagpur'),
+(20, 'Alok Banerjee', 'Mathematics', 'Male', 20, 80000, 'Kolkata');
 
-(26,'Dr. Rakesh Sharma','Teacher','Male',45,'Computer','DBMS','9876543235','rakesh@gmail.com'),
-(27,'Ms. Sunita Verma','Teacher','Female',42,'Computer','SQL','9876543236','sunita@gmail.com'),
-(28,'Mr. Anil Singh','Teacher','Male',48,'IT','Networking','9876543237','anil@gmail.com'),
-(29,'Ms. Kavya Jain','Teacher','Female',40,'IT','Python','9876543238','kavya@gmail.com'),
-(30,'Mr. Suresh Mehta','Teacher','Male',50,'Management','Finance','9876543239','suresh@gmail.com'),
-(31,'Ms. Neelam Gupta','Teacher','Female',44,'Management','HR','9876543240','neelam@gmail.com'),
-(32,'Mr. Vinod Kumar','Teacher','Male',46,'Computer','Java','9876543241','vinod@gmail.com'),
-(33,'Ms. Ritu Patel','Teacher','Female',39,'Computer','Web Dev','9876543242','ritu@gmail.com'),
-(34,'Mr. Alok Mishra','Teacher','Male',52,'IT','Data Science','9876543243','alok@gmail.com'),
-(35,'Ms. Pankhuri Roy','Teacher','Female',41,'IT','AI','9876543244','pankhuri@gmail.com'),
-(36,'Mr. Deepesh Saxena','Teacher','Male',47,'Management','Marketing','9876543245','deepesh@gmail.com'),
-(37,'Ms. Shalini Kapoor','Teacher','Female',43,'Management','Economics','9876543246','shalini@gmail.com'),
-(38,'Mr. Nitin Tiwari','Teacher','Male',49,'Computer','OS','9876543247','nitin@gmail.com'),
-(39,'Ms. Aarti Kaur','Teacher','Female',38,'Computer','C++','9876543248','aarti@gmail.com'),
-(40,'Mr. Rajeev Rana','Teacher','Male',51,'IT','Cloud','9876543249','rajeev@gmail.com'),
-(41,'Ms. Swati Aggarwal','Teacher','Female',40,'IT','ML','9876543250','swati@gmail.com'),
-(42,'Mr. Manoj Choudhary','Teacher','Male',48,'Management','Operations','9876543251','manoj@gmail.com'),
-(43,'Ms. Bhavna Joshi','Teacher','Female',42,'Management','Business Law','9876543252','bhavna@gmail.com'),
-(44,'Mr. Ashish Malhotra','Teacher','Male',45,'Computer','DSA','9876543253','ashish@gmail.com'),
-(45,'Ms. Preeti Saxena','Teacher','Female',39,'Computer','HTML','9876543254','preeti@gmail.com'),
-(46,'Mr. Sanjay Pandey','Teacher','Male',53,'IT','Cyber Security','9876543255','sanjay@gmail.com'),
-(47,'Ms. Monika Sharma','Teacher','Female',41,'IT','Big Data','9876543256','monika@gmail.com'),
-(48,'Mr. Pradeep Verma','Teacher','Male',50,'Management','Accounting','9876543257','pradeep@gmail.com'),
-(49,'Ms. Nisha Singh','Teacher','Female',44,'Management','Entrepreneurship','9876543258','nisha@gmail.com'),
-(50,'Mr. Akhilesh Yadav','Teacher','Male',55,'Computer','Software Engg','9876543259','akhilesh@gmail.com'); 
+select * from Teachers;
 
-select * from School;
+
+-- Creating Student table
+create table Students(
+    StudentID INT PRIMARY KEY,
+    Name VARCHAR(50),
+    Gender VARCHAR(10),
+    Age INT,
+    Class VARCHAR(10),
+    City VARCHAR(30),
+    Marks INT
+    );
+
+insert into Students Values 
+(1, 'Aarav Sharma', 'Male', 16, '10th', 'Delhi', 78),
+(2, 'Ananya Verma', 'Female', 15, '9th', 'Mumbai', 85),
+(3, 'Rohan Gupta', 'Male', 17, '11th', 'Jaipur', 72),
+(4, 'Ishita Mehta', 'Female', 16, '10th', 'Ahmedabad', 88),
+(5, 'Kunal Singh', 'Male', 18, '12th', 'Lucknow', 91),
+(6, 'Priya Patel', 'Female', 17, '11th', 'Surat', 84),
+(7, 'Aditya Mishra', 'Male', 16, '10th', 'Varanasi', 69),
+(8, 'Neha Joshi', 'Female', 15, '9th', 'Bhopal', 76),
+(9, 'Siddharth Malhotra', 'Male', 18, '12th', 'Chandigarh', 90),
+(10, 'Pooja Rani', 'Female', 17, '11th', 'Rohtak', 82),
+
+(11, 'Mohit Jain', 'Male', 16, '10th', 'Indore', 75),
+(12, 'Ritika Kapoor', 'Female', 15, '9th', 'Delhi', 89),
+(13, 'Aman Tiwari', 'Male', 17, '11th', 'Prayagraj', 67),
+(14, 'Sneha Kulkarni', 'Female', 16, '10th', 'Nagpur', 92),
+(15, 'Yash Arora', 'Male', 18, '12th', 'Noida', 86),
+(16, 'Kriti Saxena', 'Female', 17, '11th', 'Agra', 79),
+(17, 'Ravi Kumar', 'Male', 16, '10th', 'Patna', 71),
+(18, 'Simran Kaur', 'Female', 15, '9th', 'Amritsar', 88),
+(19, 'Harsh Vardhan', 'Male', 18, '12th', 'Kanpur', 83),
+(20, 'Nisha Pandey', 'Female', 17, '11th', 'Gorakhpur', 77),
+
+(21, 'Dev Patel', 'Male', 16, '10th', 'Vadodara', 81),
+(22, 'Aditi Choudhary', 'Female', 15, '9th', 'Meerut', 74),
+(23, 'Shubham Yadav', 'Male', 17, '11th', 'Ballia', 68),
+(24, 'Tanvi Deshpande', 'Female', 16, '10th', 'Pune', 90),
+(25, 'Nitin Agarwal', 'Male', 18, '12th', 'Bareilly', 65),
+(26, 'Riya Sen', 'Female', 17, '11th', 'Kolkata', 87),
+(27, 'Abhishek Roy', 'Male', 16, '10th', 'Howrah', 73),
+(28, 'Palak Bansal', 'Female', 15, '9th', 'Panipat', 80),
+(29, 'Vivek Soni', 'Male', 18, '12th', 'Udaipur', 84),
+(30, 'Isha Nair', 'Female', 17, '11th', 'Kochi', 91),
+
+(31, 'Rahul Das', 'Male', 16, '10th', 'Siliguri', 70),
+(32, 'Kavya Iyer', 'Female', 15, '9th', 'Chennai', 86),
+(33, 'Ankit Chauhan', 'Male', 17, '11th', 'Aligarh', 78),
+(34, 'Shruti Rao', 'Female', 16, '10th', 'Bengaluru', 89),
+(35, 'Saurabh Pandit', 'Male', 18, '12th', 'Haridwar', 66),
+(36, 'Pallavi Ghosh', 'Female', 17, '11th', 'Durgapur', 83),
+(37, 'Naveen Reddy', 'Male', 16, '10th', 'Hyderabad', 88),
+(38, 'Anjali Kumari', 'Female', 15, '9th', 'Muzaffarpur', 72),
+(39, 'Karan Malhotra', 'Male', 18, '12th', 'Faridabad', 90),
+(40, 'Ritu Sinha', 'Female', 17, '11th', 'Ranchi', 75),
+
+(41, 'Pranav Kulkarni', 'Male', 16, '10th', 'Kolhapur', 82),
+(42, 'Sakshi Tomar', 'Female', 15, '9th', 'Gwalior', 79),
+(43, 'Ayush Srivastava', 'Male', 17, '11th', 'Faizabad', 68),
+(44, 'Nandini Mishra', 'Female', 16, '10th', 'Rewa', 85),
+(45, 'Rakesh Singh', 'Male', 18, '12th', 'Deoria', 73),
+(46, 'Bhavya Jain', 'Female', 17, '11th', 'Ujjain', 88),
+(47, 'Lakshya Bhatia', 'Male', 16, '10th', 'Sonipat', 81),
+(48, 'Madhuri Patil', 'Female', 15, '9th', 'Jalgaon', 76),
+(49, 'Arjun Menon', 'Male', 18, '12th', 'Thrissur', 92),
+(50, 'Pankhuri Dubey', 'Female', 17, '11th', 'Satna', 84);
+
+select * from Students
