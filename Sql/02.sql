@@ -30,9 +30,13 @@ use restaurant;
 Create Table orders( 
     OID INT PRIMARY KEY,
     OrderName VARCHAR(50) not null,
-    PID INT,
+    PID INT Not null unique auto_increment,
+    Age Int check(age >= 18),
+    City Varchar(20) default 'Sikar',
     FOREIGN KEY(PID) REFERENCES person(PID)
 );
+use restaurant
+
 
 Select * from person;
 Select * from orders;
